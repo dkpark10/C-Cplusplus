@@ -102,19 +102,46 @@ void Pop_back(Linkedlist *l)
     free(old);
 }
 
-int Max(Linkedlist *l) // working...
+int Max(Linkedlist *l) 
 {
     Node *max;
+    Node *temp;
     max = l->head;
+    temp = max->right;
+
     if (l->head == NULL)
         printf("Empty...\n");
     else{
-        while(max->right){
-            if(max->data < max->right->data)
-                max = max->right;
+        while(temp){
+            if ((max->data) < (temp->data)){
+                max = temp;
+                temp = max->right;
+            }
+            else temp = temp->right;
         }
     }
     return max->data;
+}
+
+int Min(Linkedlist *l) 
+{
+    Node *min;
+    Node *temp;
+    min = l->head;
+    temp = min->right;
+
+    if (l->head == NULL)
+        printf("Empty...\n");
+    else{
+        while(temp){
+            if ((min->data) > (temp->data)){
+                min = temp;
+                temp = min->right;
+            }
+            else temp = temp->right;
+        }
+    }
+    return min->data;
 }
 
 void Print(Linkedlist *l)
@@ -186,6 +213,9 @@ int main(void)
     Push_back(l1,40);
     Push_back(l1,35);
     Push_back(l1,25);
+    Print(l1);
+
+    printf("Max is %d\n",Max(l1));
 
     return 0;
 }
