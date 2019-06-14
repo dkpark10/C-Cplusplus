@@ -37,9 +37,9 @@ int main(void)
     }
 
     Point *ptr;                                // 주소를 반환하기 때문에 구조체를 가리키는 포인터 생성
-    ptr = max_element(p, p + 10, Maxcmp);      // sort처럼 함수를 하나 생성해서 세번쨰 인자로 넘겨준다 포인트 구조체의 y값의 최대를 구하기위한 함수
+    ptr = max_element(p, p + 10, Maxcmp);      // 포인트 구조체의 y값의 최대를 구하기위한 함수를 구현하고 세번째 인자로 넘겨준다 
     printf("Max value of Y is %d\n", ptr->y);  // 16
-    ptr = min_element(p, p + 10, Mincmp);      // sort처럼 함수를 하나 생성해서 세번쨰 인자로 넘겨준다 포인트 구조체의 y값의 최소를 구하기위한 함수
+    ptr = min_element(p, p + 10, Mincmp);      // 포인트 구조체의 y값의 최소를 구하기위한 함수를 구현하고 세번째 인자로 넘겨준다 
     printf("Min value of Y is %d\n", ptr->y);  // 7
 
     return 0;
