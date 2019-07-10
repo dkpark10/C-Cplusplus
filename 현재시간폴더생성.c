@@ -21,7 +21,7 @@ void TimetoString(time_t time, char *str)
     struct tm* tmptr;   // tm 포인터
     tmptr = localtime(&time); // 유닉스시간이 저장된 변수의 주소를 넘겨 년원일로 변형
 
-    sprintf(str, "%d%d%d-%d%d%d", // 문자열로 변환
+    sprintf(str, "%d%02d%02d-%02d%02d%02d", // 문자열로 변환 02d% 이렇게 넣어줘야 한자리수 시간도 자릿수에 맞춰 출력
             tmptr->tm_year + 1900, tmptr->tm_mon + 1, tmptr->tm_mday,
             tmptr->tm_hour, tmptr->tm_min, tmptr->tm_sec);
 }
