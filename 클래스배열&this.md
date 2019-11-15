@@ -23,11 +23,12 @@ called des</br>
 this는 객체 자기 자신이다. 파이썬의 self와 용도가 똑같다. </br>
 아래 코드를 보자 </br>
 
-![캡처](https://user-images.githubusercontent.com/43857226/68920681-58e57b80-07b9-11ea-933f-97fdcf2bc07c.PNG) </br>
+![캡처](https://user-images.githubusercontent.com/43857226/68920974-76671500-07ba-11ea-843e-8d9e100bf3ba.PNG)</br>
 
-89와 95줄을 보자 </br>
-89줄은 객체 자기 자신의 포인터를 반환하는 함수이다. </br>
+다음 빨간 박스를 보자 </br>
+첫번째 빨간박스는 객체 자기 자신의 포인터를 반환하는 함수이다. </br>
 this가 반환된다. this는 자기 자신 객체를 가리키는 포인터 !! </br>
+그래서 출력해보면 &Person과 this랑 똑같은 주소임을 확인할 수 있다. </br>
 그래서 다음과 같이 멤버변수와 똑같은 변수명을 정의할 때 이렇게 쓸 수 있다. </br>
 
 ```c++
