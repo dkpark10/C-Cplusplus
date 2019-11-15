@@ -3,9 +3,9 @@
 객체 자신을 참조하는 참조자를 의미하는 Self-Reference </br>
 다음을 보자 </br>
 
-![캡처](https://user-images.githubusercontent.com/43857226/68922032-edea7380-07bd-11ea-81f6-c0b32678dbf4.PNG) </br>
+![캡처](https://user-images.githubusercontent.com/43857226/68923383-89c9ae80-07c1-11ea-89d5-e759a621b104.PNG)</br>
 
-return *this는 객체 자기 자신참조자를 반환한다. </br>
+return ***this**는 객체 자기 자신참조자를 반환한다. </br>
 이를 확인하기 위해 참조자를 반환하는 함수를 리턴하고 두 객체의 </br>
 주소를 확인하였다. </br>
 결과는 두근두근두근두근두근 ...</br>
