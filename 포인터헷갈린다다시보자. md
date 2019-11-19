@@ -1,0 +1,15 @@
+# 헷갈려 ㅜ 
+
+![캡처](https://user-images.githubusercontent.com/43857226/69121191-0d93db80-0adf-11ea-9579-0cefd5b34ab1.PNG) </br>
+
+다음코드를 출력해보면 아래 결과가 나타난다. </br>
+
+![캡처](https://user-images.githubusercontent.com/43857226/69121255-361bd580-0adf-11ea-9098-19cb14246dd7.PNG) </br>
+
+메모리로 그림을 그려보자! </br>
+
+![무제-1](https://user-images.githubusercontent.com/43857226/69121994-04a40980-0ae1-11ea-96c7-220e06fd6642.jpg) </br>
+
+기본이지만 다시 복습 ! 이렇게 할당된 변수는 포인터지만 </br>
+배열처럼 쓸 수 있더.
+
