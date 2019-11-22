@@ -107,9 +107,19 @@ public으로 선언되면 클래스이름을 이용해 호출 쌉가능 </br>
 
 여기서 중요한점은 static함수는 객체의 멤버가 아니라는 점이다. </br>
 
+![캡처](https://user-images.githubusercontent.com/43857226/69412674-b6963c80-0d52-11ea-8e7c-99540c12c31a.PNG) </br>
 
+보자 멤버함수가 아니니 당연히 클래스 내 멤버변수 내 접근이 불가능하다. </br>
+static 함수내에서 static 변수가 아닌 변수는 접근 불가하다. </br>
+즉 다릏게 말하자면 </br>
 
+> static 함수안에선 static 변수만 호출가능하다. </br>
 
+라고 결론이 도출된다. </br>
+이를 활용하면 전역변수와 전역함수를 대체할 수 있다. </br>
+다음과 같이 const 와 static을 함께쓰면 정의와함께 초기화할 수 있다. </br>
+
+![캡처](https://user-images.githubusercontent.com/43857226/69417666-7936ac80-0d5c-11ea-9954-4ceca408614c.PNG) </br>
 
 
 
