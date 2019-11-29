@@ -117,9 +117,12 @@ static 함수내에서 static 변수가 아닌 변수는 접근 불가하다. </
 
 라고 결론이 도출된다. </br>
 이를 활용하면 전역변수와 전역함수를 대체할 수 있다. </br>
+</br>
 다음과 같이 const 와 static을 함께쓰면 정의와함께 초기화할 수 있다. </br>
 
 ![캡처](https://user-images.githubusercontent.com/43857226/69417666-7936ac80-0d5c-11ea-9954-4ceca408614c.PNG) </br>
+
+const static멤버변수는 클래스가 정의될 때 지정된 값이 유지되는 상수 </br>
 
 
 
